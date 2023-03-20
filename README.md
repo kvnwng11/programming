@@ -1,3 +1,3 @@
 # Programming
 
-A repository storing solutions to competitive programming problems.
+A repository storing competitive programming solutions.
