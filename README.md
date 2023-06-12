@@ -1,3 +1,3 @@
 # Programming
 
-A repository storing competitive programming solutions.
+This repository stores my LeetCode and USACO solutions.
