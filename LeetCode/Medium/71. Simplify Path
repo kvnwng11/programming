@@ -7,7 +7,7 @@ public:
         for (int i=0; i<path.size(); ++i) {
             if (path[i] == '/' and curr != "") {
                 if (curr == ".") {
-
+                    // do nothing
                 }
                 else if (curr == "..") {
                     if (!items.empty())
@@ -28,7 +28,7 @@ public:
             }
             else if (curr == "..") {
                 if (!items.empty())
-                        items.pop_back();
+                    items.pop_back();
             }
             else {
                 items.push_back(curr);

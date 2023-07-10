@@ -12,7 +12,7 @@ public:
         int left = 0;
         int right = 0;
         int ans = 0;
-        unordered_map<char, int> window;
+        unordered_map<char, int> window; // maps char to rightmost index
 
         // slide window
         while (right < s.size()) {
