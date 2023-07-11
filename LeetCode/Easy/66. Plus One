@@ -2,13 +2,14 @@ class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
         int carry = 1;
-        for (int i=digits.size()-1; i>=0; --i) {
-            int sum = digits[i] + carry;
+        int idx = digits.size()-1;
+        while (idx >= 0) {
+            int sum = digits[idx] + carry;
             carry = sum / 10;
-            digits[i] = sum % 10;
+            digits[idx] = sum % 10;
+            idx--;
         }
-        if (carry != 0)
-            digits.insert(digits.begin(), carry);
+        if (carry > 0) digits.insert(digits.begin(), carry);
         return digits;
     }
 };
