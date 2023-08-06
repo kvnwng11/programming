@@ -1,5 +1,4 @@
-CC=g++ -g -Wall -std=c++17 -D_XOPEN_SOURCE
 
-main: prefix.cpp
-	${CC} -o $@ $^
+prefix: prefix.cpp
+	g++ -g -Wall -std=c++20 -D_XOPEN_SOURCE -o prefix prefix.cpp
 	
