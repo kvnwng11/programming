@@ -12,6 +12,10 @@ main
 *.stackdump
 *.xlsx
 
+# Usaco stuff
+*.in
+*.out
+
 # Visual debugger configurations
 .vscode/
 .vs/
